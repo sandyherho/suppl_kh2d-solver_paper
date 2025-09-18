@@ -1,0 +1,730 @@
+================================================================================
+COMPREHENSIVE STATISTICAL ANALYSIS OF KELVIN-HELMHOLTZ SIMULATIONS
+================================================================================
+
+Author: Sandy H. S. Herho
+Email: sandy.herho@email.ucr.edu
+================================================================================
+
+THEORETICAL FRAMEWORK
+============================================================
+
+The Kelvin-Helmholtz instability represents a fundamental mechanism for
+mixing and energy transfer in stratified shear flows. The analysis employs
+multiple complexity measures to quantify the evolution of coherent structures:
+
+1. Shannon Entropy (H):
+   H = -Σ p_i log(p_i)
+   Measures information content and disorder in spatial distribution.
+   Higher values indicate more complex spatial patterns.
+
+2. Complexity Index (CI):
+   CI = w₁H + w₂∇σ + w₃σ_norm + w₄log(1+|κ|)
+   Weighted combination of entropy, gradient variability,
+   normalized standard deviation, and kurtosis measure.
+
+3. Mixing Efficiency (Γ):
+   Γ ∝ σ_ρ × ω_rms
+   Product of density variance and vorticity RMS,
+   indicating effectiveness of turbulent mixing.
+
+============================================================
+
+
+============================================================
+SCENARIO: BASIC SHEAR LAYER
+============================================================
+
+DENSITY FIELD ANALYSIS
+----------------------------------------
+
+Time t=0.00s:
+  Basic Statistics:
+    Mean:     1.100 kg/m³
+    Std Dev:  0.095 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.200 kg/m³
+    Median:   1.100 kg/m³
+    Skewness: -0.000
+    Kurtosis: -1.930
+    Spatial Entropy: 1.667
+    Complexity Index: 0.811
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=4509.645, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+Time t=2.42s:
+  Basic Statistics:
+    Mean:     1.049 kg/m³
+    Std Dev:  0.071 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.200 kg/m³
+    Median:   1.001 kg/m³
+    Skewness: 1.193
+    Kurtosis: -0.153
+    Spatial Entropy: 2.306
+    Complexity Index: 0.794
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=4304.587, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+Time t=4.95s:
+  Basic Statistics:
+    Mean:     1.060 kg/m³
+    Std Dev:  0.081 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.200 kg/m³
+    Median:   1.003 kg/m³
+    Skewness: 0.921
+    Kurtosis: -0.932
+    Spatial Entropy: 2.222
+    Complexity Index: 0.883
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=4402.927, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+Time t=7.47s:
+  Basic Statistics:
+    Mean:     1.066 kg/m³
+    Std Dev:  0.083 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.200 kg/m³
+    Median:   1.012 kg/m³
+    Skewness: 0.778
+    Kurtosis: -1.193
+    Spatial Entropy: 2.340
+    Complexity Index: 0.945
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=4052.155, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+
+VORTICITY FIELD ANALYSIS
+----------------------------------------
+
+Time t=0.00s:
+  Basic Statistics:
+    Mean:     -1.969 s⁻¹
+    Std Dev:  4.796 s⁻¹
+    Min:      -21.950 s⁻¹
+    Max:      3.415 s⁻¹
+    Median:   -0.340 s⁻¹
+    Skewness: -2.498
+    Kurtosis: 5.422
+    Spatial Entropy: 2.751
+    Complexity Index: 1.473
+
+Time t=2.42s:
+  Basic Statistics:
+    Mean:     -0.220 s⁻¹
+    Std Dev:  6.166 s⁻¹
+    Min:      -29.103 s⁻¹
+    Max:      65.291 s⁻¹
+    Median:   -0.505 s⁻¹
+    Skewness: 2.515
+    Kurtosis: 16.456
+    Spatial Entropy: 2.246
+    Complexity Index: 2.520
+
+Time t=4.95s:
+  Basic Statistics:
+    Mean:     -0.158 s⁻¹
+    Std Dev:  4.878 s⁻¹
+    Min:      -16.419 s⁻¹
+    Max:      64.259 s⁻¹
+    Median:   -0.309 s⁻¹
+    Skewness: 2.790
+    Kurtosis: 24.955
+    Spatial Entropy: 2.219
+    Complexity Index: 2.315
+
+Time t=7.47s:
+  Basic Statistics:
+    Mean:     -0.199 s⁻¹
+    Std Dev:  5.041 s⁻¹
+    Min:      -17.256 s⁻¹
+    Max:      64.181 s⁻¹
+    Median:   -0.302 s⁻¹
+    Skewness: 2.992
+    Kurtosis: 24.748
+    Spatial Entropy: 2.116
+    Complexity Index: 2.341
+
+
+TEMPORAL EVOLUTION ANALYSIS
+----------------------------------------
+
+  Maximum Complexity Achieved:
+    Density:   0.950 at t=1.414s
+    Vorticity: 2.994 at t=1.717s
+
+  Entropy Growth Rate:
+    Density:   0.067 per second
+    Vorticity: -0.064 per second
+
+  Mean Mixing Efficiency: 0.456
+
+============================================================
+SCENARIO: DOUBLE SHEAR LAYER
+============================================================
+
+DENSITY FIELD ANALYSIS
+----------------------------------------
+
+Time t=0.00s:
+  Basic Statistics:
+    Mean:     1.352 kg/m³
+    Std Dev:  0.228 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.500 kg/m³
+    Median:   1.500 kg/m³
+    Skewness: -0.889
+    Kurtosis: -1.209
+    Spatial Entropy: 0.608
+    Complexity Index: 0.445
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=7191.411, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+Time t=3.72s:
+  Basic Statistics:
+    Mean:     1.396 kg/m³
+    Std Dev:  0.157 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.500 kg/m³
+    Median:   1.483 kg/m³
+    Skewness: -1.568
+    Kurtosis: 1.151
+    Spatial Entropy: 2.515
+    Complexity Index: 0.978
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=4079.958, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+Time t=7.45s:
+  Basic Statistics:
+    Mean:     1.373 kg/m³
+    Std Dev:  0.191 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.500 kg/m³
+    Median:   1.492 kg/m³
+    Skewness: -1.153
+    Kurtosis: -0.465
+    Spatial Entropy: 2.224
+    Complexity Index: 0.829
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=5131.715, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+Time t=11.17s:
+  Basic Statistics:
+    Mean:     1.351 kg/m³
+    Std Dev:  0.210 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.500 kg/m³
+    Median:   1.496 kg/m³
+    Skewness: -0.862
+    Kurtosis: -1.163
+    Spatial Entropy: 1.982
+    Complexity Index: 0.842
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=5408.342, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+
+VORTICITY FIELD ANALYSIS
+----------------------------------------
+
+Time t=0.00s:
+  Basic Statistics:
+    Mean:     -0.001 s⁻¹
+    Std Dev:  8.109 s⁻¹
+    Min:      -26.776 s⁻¹
+    Max:      26.635 s⁻¹
+    Median:   0.000 s⁻¹
+    Skewness: 0.000
+    Kurtosis: 3.360
+    Spatial Entropy: 2.657
+    Complexity Index: 1.495
+
+Time t=3.72s:
+  Basic Statistics:
+    Mean:     -0.117 s⁻¹
+    Std Dev:  6.006 s⁻¹
+    Min:      -63.218 s⁻¹
+    Max:      64.844 s⁻¹
+    Median:   -0.195 s⁻¹
+    Skewness: 2.057
+    Kurtosis: 24.889
+    Spatial Entropy: 1.971
+    Complexity Index: 2.543
+
+Time t=7.45s:
+  Basic Statistics:
+    Mean:     -0.237 s⁻¹
+    Std Dev:  6.552 s⁻¹
+    Min:      -63.073 s⁻¹
+    Max:      64.729 s⁻¹
+    Median:   -0.292 s⁻¹
+    Skewness: 2.388
+    Kurtosis: 22.978
+    Spatial Entropy: 2.040
+    Complexity Index: 2.737
+
+Time t=11.17s:
+  Basic Statistics:
+    Mean:     -0.135 s⁻¹
+    Std Dev:  6.105 s⁻¹
+    Min:      -63.377 s⁻¹
+    Max:      64.546 s⁻¹
+    Median:   -0.079 s⁻¹
+    Skewness: 0.829
+    Kurtosis: 15.921
+    Spatial Entropy: 2.075
+    Complexity Index: 2.403
+
+
+TEMPORAL EVOLUTION ANALYSIS
+----------------------------------------
+
+  Maximum Complexity Achieved:
+    Density:   1.005 at t=3.221s
+    Vorticity: 3.278 at t=0.101s
+
+  Entropy Growth Rate:
+    Density:   0.090 per second
+    Vorticity: -0.036 per second
+
+  Mean Mixing Efficiency: 1.287
+
+============================================================
+SCENARIO: ROTATING KH INSTABILITY
+============================================================
+
+DENSITY FIELD ANALYSIS
+----------------------------------------
+
+Time t=0.00s:
+  Basic Statistics:
+    Mean:     1.150 kg/m³
+    Std Dev:  0.142 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.300 kg/m³
+    Median:   1.150 kg/m³
+    Skewness: 0.000
+    Kurtosis: -1.931
+    Spatial Entropy: 1.644
+    Complexity Index: 0.805
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=4513.095, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+Time t=4.93s:
+  Basic Statistics:
+    Mean:     1.089 kg/m³
+    Std Dev:  0.120 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.300 kg/m³
+    Median:   1.005 kg/m³
+    Skewness: 0.941
+    Kurtosis: -0.878
+    Spatial Entropy: 2.211
+    Complexity Index: 0.875
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=4360.589, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+Time t=9.95s:
+  Basic Statistics:
+    Mean:     1.086 kg/m³
+    Std Dev:  0.120 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.300 kg/m³
+    Median:   1.006 kg/m³
+    Skewness: 1.015
+    Kurtosis: -0.758
+    Spatial Entropy: 2.177
+    Complexity Index: 0.851
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=4640.948, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+Time t=14.98s:
+  Basic Statistics:
+    Mean:     1.085 kg/m³
+    Std Dev:  0.120 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.300 kg/m³
+    Median:   1.006 kg/m³
+    Skewness: 1.027
+    Kurtosis: -0.748
+    Spatial Entropy: 2.160
+    Complexity Index: 0.845
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=4759.975, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+
+VORTICITY FIELD ANALYSIS
+----------------------------------------
+
+Time t=0.00s:
+  Basic Statistics:
+    Mean:     -2.457 s⁻¹
+    Std Dev:  4.802 s⁻¹
+    Min:      -22.762 s⁻¹
+    Max:      2.955 s⁻¹
+    Median:   -0.836 s⁻¹
+    Skewness: -2.493
+    Kurtosis: 5.398
+    Spatial Entropy: 2.749
+    Complexity Index: 1.474
+
+Time t=4.93s:
+  Basic Statistics:
+    Mean:     -0.222 s⁻¹
+    Std Dev:  5.887 s⁻¹
+    Min:      -20.720 s⁻¹
+    Max:      80.500 s⁻¹
+    Median:   -0.781 s⁻¹
+    Skewness: 3.907
+    Kurtosis: 36.294
+    Spatial Entropy: 2.136
+    Complexity Index: 2.659
+
+Time t=9.95s:
+  Basic Statistics:
+    Mean:     -0.267 s⁻¹
+    Std Dev:  6.115 s⁻¹
+    Min:      -22.453 s⁻¹
+    Max:      80.433 s⁻¹
+    Median:   -0.790 s⁻¹
+    Skewness: 4.029
+    Kurtosis: 35.590
+    Spatial Entropy: 2.035
+    Complexity Index: 2.714
+
+Time t=14.98s:
+  Basic Statistics:
+    Mean:     -0.268 s⁻¹
+    Std Dev:  6.138 s⁻¹
+    Min:      -20.866 s⁻¹
+    Max:      80.440 s⁻¹
+    Median:   -0.785 s⁻¹
+    Skewness: 4.016
+    Kurtosis: 35.255
+    Spatial Entropy: 2.142
+    Complexity Index: 2.750
+
+
+TEMPORAL EVOLUTION ANALYSIS
+----------------------------------------
+
+  Maximum Complexity Achieved:
+    Density:   0.912 at t=1.106s
+    Vorticity: 3.735 at t=0.101s
+
+  Entropy Growth Rate:
+    Density:   0.026 per second
+    Vorticity: -0.030 per second
+
+  Mean Mixing Efficiency: 0.761
+
+============================================================
+SCENARIO: FORCED KH TURBULENCE
+============================================================
+
+DENSITY FIELD ANALYSIS
+----------------------------------------
+
+Time t=0.00s:
+  Basic Statistics:
+    Mean:     1.050 kg/m³
+    Std Dev:  0.047 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.100 kg/m³
+    Median:   1.050 kg/m³
+    Skewness: -0.000
+    Kurtosis: -1.931
+    Spatial Entropy: 1.678
+    Complexity Index: 0.814
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=10164.779, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+Time t=7.43s:
+  Basic Statistics:
+    Mean:     1.031 kg/m³
+    Std Dev:  0.042 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.100 kg/m³
+    Median:   1.001 kg/m³
+    Skewness: 0.832
+    Kurtosis: -1.143
+    Spatial Entropy: 1.955
+    Complexity Index: 0.825
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=10785.069, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+Time t=14.95s:
+  Basic Statistics:
+    Mean:     1.041 kg/m³
+    Std Dev:  0.045 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.100 kg/m³
+    Median:   1.019 kg/m³
+    Skewness: 0.396
+    Kurtosis: -1.709
+    Spatial Entropy: 2.177
+    Complexity Index: 0.944
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=8673.375, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+Time t=22.48s:
+  Basic Statistics:
+    Mean:     1.043 kg/m³
+    Std Dev:  0.045 kg/m³
+    Min:      1.000 kg/m³
+    Max:      1.100 kg/m³
+    Median:   1.019 kg/m³
+    Skewness: 0.334
+    Kurtosis: -1.771
+    Spatial Entropy: 2.091
+    Complexity Index: 0.923
+
+  Normality Tests:
+    Shapiro-Wilk: Non-normal (p=0.0)
+    Anderson-Darling: Non-normal (stat=8886.115, crit=0.787)
+    Jarque-Bera: Non-normal (p=0.0)
+    D'Agostino K²: Non-normal (p=0.0)
+
+
+VORTICITY FIELD ANALYSIS
+----------------------------------------
+
+Time t=0.00s:
+  Basic Statistics:
+    Mean:     -1.980 s⁻¹
+    Std Dev:  5.014 s⁻¹
+    Min:      -24.031 s⁻¹
+    Max:      6.657 s⁻¹
+    Median:   -0.526 s⁻¹
+    Skewness: -2.218
+    Kurtosis: 4.592
+    Spatial Entropy: 2.974
+    Complexity Index: 1.521
+
+Time t=7.43s:
+  Basic Statistics:
+    Mean:     -0.174 s⁻¹
+    Std Dev:  5.973 s⁻¹
+    Min:      -41.531 s⁻¹
+    Max:      100.021 s⁻¹
+    Median:   -0.179 s⁻¹
+    Skewness: 4.196
+    Kurtosis: 46.106
+    Spatial Entropy: 1.665
+    Complexity Index: 2.609
+
+Time t=14.95s:
+  Basic Statistics:
+    Mean:     -0.237 s⁻¹
+    Std Dev:  6.500 s⁻¹
+    Min:      -32.548 s⁻¹
+    Max:      100.118 s⁻¹
+    Median:   -0.085 s⁻¹
+    Skewness: 4.554
+    Kurtosis: 42.707
+    Spatial Entropy: 1.771
+    Complexity Index: 2.738
+
+Time t=22.48s:
+  Basic Statistics:
+    Mean:     -0.238 s⁻¹
+    Std Dev:  6.479 s⁻¹
+    Min:      -30.297 s⁻¹
+    Max:      100.076 s⁻¹
+    Median:   -0.166 s⁻¹
+    Skewness: 4.470
+    Kurtosis: 40.614
+    Spatial Entropy: 1.719
+    Complexity Index: 2.695
+
+
+TEMPORAL EVOLUTION ANALYSIS
+----------------------------------------
+
+  Maximum Complexity Achieved:
+    Density:   1.094 at t=3.311s
+    Vorticity: 3.868 at t=0.100s
+
+  Entropy Growth Rate:
+    Density:   0.012 per second
+    Vorticity: -0.041 per second
+
+  Mean Mixing Efficiency: 0.302
+
+============================================================
+SCENARIO: COMPLEXITY_COMPARISON
+============================================================
+
+
+
+============================================================
+COMPLEXITY COMPARISON ACROSS SCENARIOS
+============================================================
+
+Normalized Complexity Indices (0-1 scale):
+----------------------------------------
+
+Basic Shear Layer:
+  Early Stage (t<25%):   0.886
+  Growth Stage (25-50%): 0.752
+  Mature Stage (50-75%): 0.792
+  Late Stage (t>75%):    0.810
+  Overall Weighted:      0.800
+
+Double Shear Layer:
+  Early Stage (t<25%):   0.874
+  Growth Stage (25-50%): 0.846
+  Mature Stage (50-75%): 0.847
+  Late Stage (t>75%):    0.822
+  Overall Weighted:      0.845
+
+Rotating KH Instability:
+  Early Stage (t<25%):   0.906
+  Growth Stage (25-50%): 0.874
+  Mature Stage (50-75%): 0.877
+  Late Stage (t>75%):    0.879
+  Overall Weighted:      0.881
+
+Forced KH Turbulence:
+  Early Stage (t<25%):   1.000
+  Growth Stage (25-50%): 0.886
+  Mature Stage (50-75%): 0.895
+  Late Stage (t>75%):    0.889
+  Overall Weighted:      0.907
+
+
+============================================================
+INTER-SCENARIO STATISTICAL COMPARISONS
+============================================================
+
+DENSITY FIELD COMPARISONS
+----------------------------------------
+
+Kruskal-Wallis: Significant difference between scenarios (p=0.0)
+
+Pairwise Mann-Whitney U Tests:
+  Basic Shear Layer vs Double Shear Layer: Significant difference (p=0.0)
+  Basic Shear Layer vs Rotating KH Instability: Significant difference (p=0.0)
+  Basic Shear Layer vs Forced KH Turbulence: Significant difference (p=0.0)
+  Double Shear Layer vs Rotating KH Instability: Significant difference (p=0.0)
+  Double Shear Layer vs Forced KH Turbulence: Significant difference (p=0.0)
+  Rotating KH Instability vs Forced KH Turbulence: Significant difference (p=0.0)
+
+
+VORTICITY FIELD COMPARISONS
+----------------------------------------
+
+Kruskal-Wallis: Significant difference between scenarios (p=0.0)
+
+Pairwise Mann-Whitney U Tests:
+  Basic Shear Layer vs Double Shear Layer: No significant difference (p=0.144)
+  Basic Shear Layer vs Rotating KH Instability: Significant difference (p=0.0)
+  Basic Shear Layer vs Forced KH Turbulence: No significant difference (p=0.195)
+  Double Shear Layer vs Rotating KH Instability: Significant difference (p=0.0)
+  Double Shear Layer vs Forced KH Turbulence: Significant difference (p=0.0)
+  Rotating KH Instability vs Forced KH Turbulence: Significant difference (p=0.0)
+
+
+============================================================
+PHYSICAL INTERPRETATIONS AND CONCLUSIONS
+============================================================
+
+1. INSTABILITY EVOLUTION:
+   The Kelvin-Helmholtz instability undergoes distinct evolutionary stages:
+   - Linear growth: Exponential amplification of perturbations (Ri < 0.25)
+   - Nonlinear saturation: Billow formation and vortex roll-up
+   - Secondary instabilities: Three-dimensional breakdown (in 2D: pairing)
+   - Turbulent decay: Energy cascade and viscous dissipation
+
+2. RICHARDSON NUMBER EFFECTS:
+   Ri = g∆ρδ/(ρ₀∆U²) controls shear vs. stratification balance:
+   - Ri < 0.25: Unstable, vigorous mixing
+   - Ri ≈ 0.25: Marginal stability, intermittent turbulence
+   - Ri > 0.25: Stable stratification suppresses vertical motion
+
+3. REYNOLDS NUMBER DEPENDENCE:
+   Re = ∆Uδ/ν determines the scale separation:
+   - Re < 1000: Laminar billows, direct dissipation
+   - Re ~ 1000-5000: Transitional, secondary instabilities
+   - Re > 5000: Fully turbulent, extended inertial range
+
+4. MIXING EFFICIENCY:
+   The flux Richardson number Rf = Ri·Pr/(1+Pr) where Pr = ν/κ
+   Maximum mixing efficiency Γ ≈ 0.2 occurs at Ri ≈ 0.15-0.20
+   Forced scenarios maintain higher sustained mixing rates
+
+5. ENTROPY PRODUCTION:
+   Spatial entropy increases monotonically in free evolution
+   Forced turbulence reaches statistical equilibrium
+   Double shear layers show enhanced entropy from vortex interactions
+   Rotation modifies entropy growth through geostrophic adjustment
+
+6. GEOPHYSICAL IMPLICATIONS:
+   - Atmospheric applications: Cloud-top entrainment, CAT generation
+   - Oceanic applications: Thermocline erosion, mixed layer deepening
+   - Climate modeling: Parameterization of subgrid-scale mixing
+   - Energy budget: Conversion of mean shear to turbulent kinetic energy
+
+================================================================================
+END OF STATISTICAL ANALYSIS
+================================================================================

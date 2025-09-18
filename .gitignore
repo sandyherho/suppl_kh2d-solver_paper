@@ -1,0 +1,52 @@
+# Jupyter Notebook files
+*.ipynb
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Jupyter virtual documents (created by some extensions)
+.virtual_documents/
+*/.virtual_documents/*
+
+# Jupyter metadata and cache
+.jupyter/
+.local/
+.ipython/
+
+# Jupyter notebook conversion artifacts
+*.nbconvert/
+*.nb.html
+
+# Outputs folder
+outputs/
+./outputs/
+
+# NetCDF files
+*.nc
+*.netcdf
+*.ncdf
+*.nc4
+*.netcdf4
+
+# GIF files
+*.gif
+*.GIF
+
+# Additional Jupyter-related temporary files
+.~*.ipynb
+*~.ipynb
+.#*.ipynb
+\#*#.ipynb
+
+# Jupyter Lab
+.jupyter/
+.jupyterlab/
+
+# Jupyter notebook server files
+.notebook/
+notebook_cookie_secret

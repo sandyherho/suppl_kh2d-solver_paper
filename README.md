@@ -1,5 +1,6 @@
 # Supplementary Analysis Scripts for kh2d-solver Paper
 
+[![DOI](https://zenodo.org/badge/1055379655.svg)](https://doi.org/10.5281/zenodo.17161402)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 [![Paper](https://img.shields.io/badge/Paper-arXiv:2509.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2509.XXXXX)

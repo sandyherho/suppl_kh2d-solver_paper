@@ -3,7 +3,7 @@
 [![DOI](https://zenodo.org/badge/1055379655.svg)](https://doi.org/10.5281/zenodo.17161402)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
-[![Paper](https://img.shields.io/badge/Paper-arXiv:2509.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2509.XXXXX)
+[![Paper](https://img.shields.io/badge/Paper-arXiv:2509.16080-b31b1b.svg)](http://arxiv.org/abs/2509.16080)
 [![Data Archive](https://img.shields.io/badge/Data-OSF.IO/HF6KX-blue)](https://doi.org/10.17605/OSF.IO/HF6KX)
 
 Supplementary analysis and visualization scripts for the paper *"kh2d-solver: A Python Library for Idealized Two-Dimensional Incompressible Kelvin-Helmholtz Instability"*
